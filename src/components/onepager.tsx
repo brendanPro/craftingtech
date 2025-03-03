@@ -1,13 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaCalendarAlt } from "react-icons/fa";
 import Header from "./header";
+import { JSX } from "react";
 
 export default function CraftingTech() {
   return (
     <>
       <Header />
-      <div className="font-sans bg-gray-900 text-white">
+      <div id="home" className="font-sans bg-gray-900 text-white">
         {/* Hero Section */}
         <section className="h-screen flex flex-col justify-center items-center text-center px-6">
           <h1 className="text-5xl font-bold">Crafting Tech</h1>
@@ -19,7 +20,7 @@ export default function CraftingTech() {
         </section>
         
         {/* About Section */}
-        <section className="py-20 px-6 text-center max-w-4xl mx-auto">
+        <section id="about" className="py-20 px-6 text-center max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold">Qui suis-je ?</h2>
           <p className="mt-4 text-gray-300">
             Je suis <span className="text-blue-400 font-semibold">Brendan GOUIN</span>, ingénieur passionné par
@@ -29,7 +30,7 @@ export default function CraftingTech() {
         </section>
         
         {/* Services Section */}
-        <section className="py-20 px-6 bg-gray-800 text-center">
+        <section id="services" className="py-20 px-6 bg-gray-800 text-center">
           <h2 className="text-3xl font-bold">Mes Services</h2>
           <div className="mt-6 flex flex-col md:flex-row justify-center gap-6">
             <ServiceCard title="Développement sur mesure" description="Création d’applications web et mobiles adaptées à vos besoins." />
@@ -39,13 +40,13 @@ export default function CraftingTech() {
         </section>
         
         {/* Expériences & Témoignages (Placeholder) */}
-        <section className="py-20 px-6 text-center max-w-4xl mx-auto">
+        <section id="experience" className="py-20 px-6 text-center max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold">Expériences & Témoignages</h2>
           <p className="mt-4 text-gray-300">(À compléter avec des retours clients et expériences clés)</p>
         </section>
         
         {/* Contact Section */}
-        <section className="py-20 px-6 bg-gray-800 text-center">
+        <section id="contact" className="py-20 px-6 bg-gray-800 text-center">
           <h2 className="text-3xl font-bold">Contactez-moi</h2>
           <p className="mt-4 text-gray-300">Prêt à donner vie à votre projet ?</p>
           <div className="mt-6 flex justify-center gap-6">
@@ -58,7 +59,9 @@ export default function CraftingTech() {
   );
 }
 
-function ServiceCard({ title, description }) {
+function ServiceCard({ title, description }:{
+  title: string;
+  description: string;}) {
   return (
     <motion.div 
       whileHover={{ scale: 1.05 }} 
@@ -70,7 +73,10 @@ function ServiceCard({ title, description }) {
   );
 }
 
-function ContactButton({ icon, text, link }) {
+function ContactButton({ icon, text, link }:{
+  icon: JSX.Element;
+  text: string;
+  link: string;}) {
   return (
     <a href={link} className="flex items-center gap-2 bg-blue-500 px-4 py-2 rounded-lg shadow-md hover:bg-blue-600">
       {icon} <span>{text}</span>

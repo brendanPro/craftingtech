@@ -1,13 +1,15 @@
 import './App.css'
-import ChangeMe from './components/changeme'
-import Header from './components/header'
-import CraftingTech from './components/onepager'
+// import ChangeMe from './components/changeme'
+// import Header from './components/header'
+import OnePager from './components/newop'
+// import CraftingTech from './components/onepager'
 
 function App() {
 
   return (
     <>
-      <CraftingTech />
+      <OnePager />
+      {/* <CraftingTech /> */}
       {/* <Header />
       <ChangeMe /> */}
     </>
