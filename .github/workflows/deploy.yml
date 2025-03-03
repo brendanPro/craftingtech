@@ -33,7 +33,7 @@ jobs:
         run: bun run build
 
       - name: Fix assests
-        run: sed -i -e 's/assets/.assets/g' ./dist/index.txt
+        run: sed -i -e 's/assets/.assets/g' ./dist/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
