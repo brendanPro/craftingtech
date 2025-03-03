@@ -26,13 +26,19 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Build project
         run: bun run build
+
+      - name: Fix assests
+        run: sed -i -e 's/assets/.assets/g' ./dist/index.txt
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Assurez-vous que le dossier build correspond à votre configuration
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
