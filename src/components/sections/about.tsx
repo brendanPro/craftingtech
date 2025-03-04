@@ -18,6 +18,8 @@ export default function AboutSection(props: {id:string, index: number}) {
           Je suis <span className="text-blue-400 font-semibold">Brendan GOUIN</span>, ingénieur passionné par
           l'artisanat du logiciel. De la conception à la mise en production,
           j'accompagne mes clients à chaque étape du développement.
+          Mon expertise couvre l’ensemble du processus, du backend au frontend en passant par le mobile et les opérations.
+          J’ai travaillé avec des entreprises de toutes tailles, mais j’ai une préférence pour l’univers des startups, où l’impact est immédiat et mesurable.
         </p>
       </motion.section>
 
