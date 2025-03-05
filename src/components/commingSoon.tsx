@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function ComingSoon() {
-  const [progress] = useState(80); 
+  const [progress] = useState(50); 
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-900 to-gray-900 text-white text-center p-6">
