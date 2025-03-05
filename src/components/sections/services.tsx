@@ -10,10 +10,10 @@ export default function ServicesSection(props: {id:string, index: number}) {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: index * 0.2 }}
-        className="min-h-(--section-height) flex flex-col p-10 justify-center text-center"
+        className="min-h-(--section-height) flex flex-col p-10 justify-center text-center bg-gray-300"
       >
       {/* <section id={id} className="py-20 px-6 text-center"> */}
-        <h2 className="text-3xl font-bold">Mes Services</h2>
+        <h2 className="text-3xl font-bold text-black">Mes Services</h2>
         <div className="mt-6 flex flex-col md:flex-row justify-center gap-6">
           <ServiceCard title="Développement sur mesure" description="Création d’applications web et mobiles adaptées à vos besoins." />
           <ServiceCard title="Optimisation et refonte" description="Amélioration de vos logiciels existants pour plus d'efficacité." />
