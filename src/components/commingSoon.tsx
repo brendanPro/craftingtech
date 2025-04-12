@@ -6,7 +6,8 @@ export default function ComingSoon() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-900 to-gray-900 text-white text-center p-6">
-      <h1 className="text-4xl font-bold mb-4">On y travaille ! 🚀</h1>
+      <h1 className="text-4xl font-bold mb-4">Site en cours de construction</h1>
+      <h3 className="text-4xl font-bold mb-4">On y travaille ! 🚀</h3>
       <p className="text-lg mb-6">Suivez les avancées de Crafting Tech</p>
       
       <div className="w-full max-w-md bg-gray-700 rounded-full h-6 overflow-hidden mb-4">
