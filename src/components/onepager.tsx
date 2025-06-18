@@ -8,11 +8,11 @@ import Contact from "./sections/contact";
 import Footer from "./footer";
 
 const sections = [
-  { id: "home", label: "Home", component: <Home id="home" index={0}/> },
-  { id: "about", label: "About", component: <About id="about" index={1} /> },
-  { id: "services", label: "Services", component: <Services id="services" index={2} /> },
-  { id: "experience", label: "Experience", component: <Experience id="experience" index={3}/> },
-  { id: "contact", label: "Contact", component: <Contact id="contact" index={4} /> },
+  { id: "home", label: "Home", component: <Home id="home" index={0} key={0}/> },
+  { id: "about", label: "About", component: <About id="about" index={1} key={1} /> },
+  { id: "services", label: "Services", component: <Services id="services" index={2} key={2} /> },
+  { id: "experience", label: "Experience", component: <Experience id="experience" index={3} key={3}/> },
+  { id: "contact", label: "Contact", component: <Contact id="contact" index={4} key={4} /> },
 ];
 
 

@@ -16,7 +16,7 @@ export default function ContactSection(props: {id:string, index: number}) {
       >
       {/* <section id={id} className="py-20 px-6 text-center"> */}
         <h2 className="text-3xl font-bold">Contactez-moi</h2>
-        <p className="mt-4 text-gray-300">Prêt à donner vie à votre projet ?</p>
+        <p className="mt-4">Prêt à donner vie à votre projet ?</p>
         <div className="mt-6 flex justify-center gap-6">
           <ContactButton icon={<FaEnvelope />} text="Email" link="mailto:contact@craftingtech.com" />
           <ContactButton icon={<FaCalendarAlt />} text="Calendly" link="#" />
