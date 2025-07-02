@@ -5,7 +5,6 @@ import About from "./sections/about";
 import Services from "./sections/services";
 import Experience from "./sections/experience";
 import Contact from "./sections/contact";
-import Footer from "./footer";
 
 const sections = [
   { id: "home", label: "Home", component: <Home id="home" index={0} key={0}/> },
@@ -31,8 +30,6 @@ export default function OnePager() {
         ))}
       </div>
 
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

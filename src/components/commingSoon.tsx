@@ -19,20 +19,6 @@ export default function ComingSoon() {
         />
       </div>
       <p className="text-sm">Progression : {progress}%</p>
-
-      {/* <form className="mt-6 w-full max-w-sm">
-        <input 
-          type="email" 
-          placeholder="Votre email pour être notifié" 
-          className="w-full p-2 rounded-md text-black"
-        />
-        <button 
-          type="submit" 
-          className="mt-2 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md transition"
-        >
-          Être notifié
-        </button>
-      </form> */}
     </div>
   );
 }
