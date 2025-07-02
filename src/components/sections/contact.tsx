@@ -12,16 +12,14 @@ export default function ContactSection(props: {id:string, index: number}) {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: index * 0.2 }}
-        className="min-h-(--section-height) flex flex-col p-10 justify-center text-center bg-gray-300"
+        className="min-h-(--section-height) flex flex-col p-10 justify-center text-center bg-gray-600"
       >
-      {/* <section id={id} className="py-20 px-6 text-center"> */}
         <h2 className="text-3xl font-bold">Contactez-moi</h2>
         <p className="mt-4">Prêt à donner vie à votre projet ?</p>
         <div className="mt-6 flex justify-center gap-6">
-          <ContactButton icon={<FaEnvelope />} text="Email" link="mailto:contact@craftingtech.com" />
-          <ContactButton icon={<FaCalendarAlt />} text="Calendly" link="#" />
+          <ContactButton icon={<FaEnvelope />} text="Email" link="mailto:brendan.gouin.pro@gmail.com" />
+          <ContactButton icon={<FaCalendarAlt />} text="Calendly" link="https://calendly.com/brendan-gouin-pro/30min" />
         </div>
-      {/* </section> */}
       </motion.section>
     </>
   );
